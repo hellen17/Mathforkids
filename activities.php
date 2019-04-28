@@ -4,9 +4,10 @@
 	<meta charset="utf-8">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
 	<title></title>
+
 	<link rel="stylesheet" href="">
-	<script src="jquery-3.3.1.js" type="text/javascript" charset="utf-8" ></script>
-	<script src="bootstrap.min.js" type="text/javascript" charset="utf-8"></script>
+	<script src="jquery-3.3.1.js" type="text/javascript" ></script>
+	<script src="bootstrap.min.js" type="text/javascript"></script>
 	  <meta name="keywords" content="">
   <meta name="description" content="">
   <meta name="viewport" content="width=device-width">
@@ -117,5 +118,17 @@ background-repeat: no-repeat;
 			<button type="button" onclick="getAnswer()">Check Answer</button>
 			<button type="button" ><a href="activities.php">Next Sum</a></button></div>
 
+
+			 
+    <footer>
+      <div class="container">
+        <div class="row">
+          <div class="col-sm-12 text-center">
+            <p><small>Copyright &copy; Math for Kids. All rights reserved.</small></p>
+          </div>
+        </div>
+      </div>
+    </footer>
+    
 </body>
 </html>
