@@ -80,7 +80,8 @@ background-repeat: no-repeat;
       </div>
     </div>
 
-    <br><br><br><br><br><br>
+    <br><br><br><br>
+
 		<!--button to check for answers -->
 		<script>
 			
@@ -93,10 +94,12 @@ background-repeat: no-repeat;
 			
 		</script>
 
-		<p id="answer" style="display: none;text-align: center;"></p><!-- where the answer is displayed -->
-		<p id="meme"></p>
 
 	<div class="container" style="margin-left: 450px;">
+	
+	<h1 style="color: black; margin-left: -60px;">Addition Sums</h1><br><br><br><br>
+	<p id="answer" style="display: none; font-size: 30px;"></p><!-- where the answer is displayed -->
+
 
 	<script type="text/javascript">
 		
@@ -111,7 +114,7 @@ background-repeat: no-repeat;
 		document.write(firstNum + '+' + secondNum +'= ?');
 
 
-		document.getElementById("answer").innerHTML = solution;
+		document.getElementById("answer").innerHTML = "The answer is " + solution;
 	</script>
 
 			<input type="text" id="myAnswer"><br><br>
