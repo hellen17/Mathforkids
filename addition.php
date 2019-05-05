@@ -30,29 +30,15 @@
 
   <script src="js/modernizr-2.7.1.js"></script>
 
-  <!-- Fav and touch icons -->
-  <link rel="apple-touch-icon-precomposed" sizes="144x144" href="/apple-touch-icon-144-precomposed.png">
-  <link rel="apple-touch-icon-precomposed" sizes="114x114" href="/apple-touch-icon-114-precomposed.png">
-  <link rel="apple-touch-icon-precomposed" sizes="72x72" href="/apple-touch-icon-72-precomposed.png">
-  <link rel="apple-touch-icon-precomposed" href="/apple-touch-icon-57-precomposed.png">
+  <
+ 
   <link rel="shortcut icon" href="/favicon.ico">
 
 <style type="text/css">
   h1{
     display: inline;
   }
- /* #fixed{
-  background:url(math.jpg) no-repeat center center fixed;
-  display: table;
-  height: 60%;
-  position: relative;
-  width: 100%;
-  background-size: cover;
- background-image: linear-gradient(rgba(255,0,0,0), rgba(255,0,0,1)),url(Therapistbg.jpg);
-    background-position: center;
-background-repeat: no-repeat;
 
-}*/
 </style>
 
 
@@ -119,7 +105,7 @@ background-repeat: no-repeat;
 
 			<input type="text" id="myAnswer"><br><br>
 			<button type="button" onclick="getAnswer()">Check Answer</button>
-			<button type="button" ><a href="activities.php">Next Sum</a></button></div>
+			<button type="button" ><a href="addition.php">Next Sum</a></button></div>
 
 
 			 
