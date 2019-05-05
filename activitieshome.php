@@ -58,7 +58,7 @@
         <div class="navbar-collapse collapse">
           <ul class="nav navbar-nav navbar-right">
             <li><a href="index.html" class="active">Home</a></li>
-            <li><a href="activities.php">Activities</a></li>
+            <li><a href="activitieshome.php">Activities</a></li>
             <li><a href="#contact">Contact us</a></li>
             <li><a href="#account">Account</a></li>
           </ul>
@@ -66,14 +66,9 @@
       </div>
     </div>
 
-<!-- PRE LOADER -->
-<!-- <div class="preloader">
-     <div class="spinner">
-          <span class="spinner-rotate"></span>
-     </div>
-</div> -->
 
-<!-- SERVICE SECTION -->
+
+<!-- ACTIVITIES SECTION -->
 <section id="service" class="parallax-section">
      <div class="container">
           <div class="row">
