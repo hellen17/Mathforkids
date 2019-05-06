@@ -85,10 +85,9 @@ background-repeat: no-repeat;
     <br><br><br><br>
     <h1>Have Some Questions?</h1>
 
-<img src="../assets/inbox-logo.png" alt="Inbox Logo Image" height="350px" width="300px" >
 
-<div class="mycontactform" style="float: right;">
-
+<div class="mycontactform" style="padding-left:350px;">
+<h1 style="color:black;">Get in Touch With Us</h1>
 <form action="../server/contacts.php" method="POST">
   <label for="fname">First Name</label>
   <input type="text" id="fname" name="firstname" placeholder="Enter your first name here..." required autocomplete="off"><br>
