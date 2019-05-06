@@ -1,64 +1,39 @@
-<?php
-
-session_start();
-
-if( isset($_SESSION['user_id']) ){
-	header("Location: /");
-}
-
-require 'database.php';
-
-$message = '';
-
-if(!empty($_POST['email']) && !empty($_POST['password'])):
-	
-	// Enter the new user in the database
-	$sql = "INSERT INTO users (email, password) VALUES (:email, :password)";
-	$stmt = $conn->prepare($sql);
-
-	$stmt->bindParam(':email', $_POST['email']);
-	
-		$hash= password_hash($_POST['password'], PASSWORD_BCRYPT);
-		$stmt->bindParam(':password' ,$hash); 
-
-	if( $stmt->execute() ):
-		$message = 'Successfully created new user';
-	else:
-		$message = 'Sorry there must have been an issue creating your account';
-	endif;
-
-endif;
-
-?>
-
+<?php include('server.php') ?>
 <!DOCTYPE html>
 <html>
 <head>
-	<title>Register Below</title>
-	<link rel="stylesheet" type="text/css" href="style.css">
-	<link href='http://fonts.googleapis.com/css?family=Comfortaa' rel='stylesheet' type='text/css'>
+  <title>Registration system PHP and MySQL</title>
+  <link rel="stylesheet" type="text/css" href="style.css">
 </head>
 <body>
-
-	<div class="header">
-		<a href="/">Kids App</a>
-	</div>
-
-	<?php if(!empty($message)): ?>
-		<p><?= $message ?></p>
-	<?php endif; ?>
-
-	<h1>Register</h1>
-	<span>or <a href="login.php">login here</a></span>
-
-	<form action="register.php" method="POST">
-		
-		<input type="text" placeholder="Enter your email" name="email">
-		<input type="password" placeholder="and password" name="password">
-		<input type="password" placeholder="confirm password" name="confirm_password">
-		<input type="submit">
-
-	</form>
-
+  <div class="header">
+  	<h2>Register</h2>
+  </div>
+	
+  <form method="post" action="register.php">
+  	<?php include('errors.php'); ?>
+  	<div class="input-group">
+  	  <label>Username</label>
+  	  <input type="text" name="username" value="<?php echo $username; ?>">
+  	</div>
+  	<div class="input-group">
+  	  <label>Email</label>
+  	  <input type="email" name="email" value="<?php echo $email; ?>">
+  	</div>
+  	<div class="input-group">
+  	  <label>Password</label>
+  	  <input type="password" name="password_1">
+  	</div>
+  	<div class="input-group">
+  	  <label>Confirm password</label>
+  	  <input type="password" name="password_2">
+  	</div>
+  	<div class="input-group">
+  	  <button type="submit" class="btn" name="reg_user">Register</button>
+  	</div>
+  	<p>
+  		Already a member? <a href="login.php">Sign in</a>
+  	</p>
+  </form>
 </body>
 </html>
