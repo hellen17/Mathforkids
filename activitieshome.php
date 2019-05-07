@@ -119,6 +119,37 @@
                </div>
                
           </div>
+
+          <div class="row">
+
+          <div class="wow fadeInUp section-title" data-wow-delay="0.2s">
+                    <!-- SECTION TITLE -->
+                    <h2>Math Games and Videos</h2>
+                    <p style="font-weight: bolder; font-size: 18px;">Do math in a fun way</p>
+               </div>
+
+          <div class="container" style="margin-left:260px;">
+          
+          <div class="col-md-3 col-sm-6 wow fadeInUp" data-wow-delay="0.6s">
+                    <div class="service-thumb">
+                         <i class="fas fa-gamepad"></i>
+                         <h4>Games</h4>
+                         <p>Play a game to improve your skills</p>
+                         <a href="#" class="btn btn-primary btn-lg">Play </a>
+                    </div>
+               </div>
+
+               <div class="col-md-3 col-sm-6 wow fadeInUp" data-wow-delay="0.8s">
+                    <div class="service-thumb">
+                       <i class='fab fa-youtube' style='font-size:36px; color: #ce0a21; padding-bottom: inherit; padding-top: inherit;' ></i>
+                         <h4>Videos</h4>
+                         <p>Learn Math through watching videos.</p>
+                         <a href="#" class="btn btn-primary btn-lg">Watch </a>
+                    </div>
+               
+               </div>
+               </div>
+          </div>
      </div>
 </section>
 
