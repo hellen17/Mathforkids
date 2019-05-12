@@ -13,4 +13,3 @@
   	<?php endforeach ?>
   </div>
 >>>>>>> edbdfe82a598a5400b7e12ac7e3a6708331be657
-<?php  endif ?>
