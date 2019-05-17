@@ -1,4 +1,6 @@
-<?php include('server.php') ?>
+<?php 
+session_start();
+?>
 <!DOCTYPE html>
 <html>
 <head>
@@ -10,8 +12,7 @@
   	<h2>Register</h2>
   </div>
 	
-  <form method="post" action="register.php">
-  	<?php include('errors.php'); ?>
+  <form method="post" action="server.php">
   	<div class="input-group">
   	  <label>Username</label>
   	  <input type="text" name="username" value="<?php echo $username; ?>">

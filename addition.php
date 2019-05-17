@@ -1,3 +1,6 @@
+<?php
+ session_start();
+?>
 <!DOCTYPE html>
 <html>
 <head>
@@ -30,8 +33,7 @@
 
   <script src="js/modernizr-2.7.1.js"></script>
 
-  <
- 
+   
   <link rel="shortcut icon" href="/favicon.ico">
 
 <style type="text/css">
@@ -85,8 +87,7 @@
 	
 	<h1 style="color: black; margin-left: -60px;">Addition Sums</h1><br><br><br><br>
 	<p id="answer" style="display: none; font-size: 30px;"></p><!-- where the answer is displayed -->
-
-
+  
 	<script type="text/javascript">
 		
 
@@ -96,11 +97,15 @@
 		var secondNum = Math.ceil(5 * Math.random());
 		//answer
 		var solution = firstNum + secondNum;
-
+    
 		document.write(firstNum + '+' + secondNum +'= ?');
 
 
 		document.getElementById("answer").innerHTML = "The answer is " + solution;
+
+   
+ 
+    
 	</script>
 
 			<input type="text" id="myAnswer"><br><br>

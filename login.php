@@ -1,4 +1,6 @@
-<?php include('server.php') ?>
+<?php 
+
+?>
 <!DOCTYPE html>
 <html>
 <head>
@@ -11,7 +13,6 @@
   </div>
 	 
   <form method="post" action="login.php">
-  	<?php include('errors.php'); ?>
   	<div class="input-group">
   		<label>Username</label>
   		<input type="text" name="username" >
@@ -27,5 +28,7 @@
   		Not yet a member? <a href="register.php">Sign up</a>
   	</p>
   </form>
+
+	
 </body>
 </html>
