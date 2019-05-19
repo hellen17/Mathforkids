@@ -78,7 +78,7 @@
             <h1 style="color: red">Math</h1><h1 style="color: yellow">for </h1><h1 style="color: green">Kids</h1>
             <h3>Mathematics for children aged 6 to 11, year 2 to year 6, grade 1 to grade 5</h3>
            </div>
-            <a href="#" class="btn btn-primary btn-lg">Join Us <i class="fa fa-sign up"></i></a>
+            <a href="signup.php" class="btn btn-primary btn-lg">Join Us <i class="fa fa-sign up"></i></a>
           </div>
         </div>
         
