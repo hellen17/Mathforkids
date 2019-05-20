@@ -9,7 +9,7 @@ $errors = array();
 // connect to the database
 $db = mysqli_connect('localhost', 'root', '', 'mathforkids');
 
-/*EGISTER USER
+//REGISTER USER
 if (isset($_POST['reg_user'])) {
   // receive all input values from the form
   $username = mysqli_real_escape_string($db, $_POST['username']);
@@ -53,7 +53,7 @@ if (isset($_POST['reg_user'])) {
   	$_SESSION['success'] = "You are now logged in";
   	header('Location: index.php');
   }
-}*/
+}
 
 // LOGIN USER
 if (isset($_POST['login_user'])) {
