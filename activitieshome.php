@@ -131,11 +131,11 @@
                     <p style="font-weight: bolder; font-size: 18px;">Do math in a fun way</p>
                </div>
 
-          <div class="container" style="margin-left:260px;">
+          <div class="container" style="margin-left:200px;">
           
           <div class="col-md-3 col-sm-6 wow fadeInUp" data-wow-delay="0.6s">
                     <div class="service-thumb">
-                         <i class="fas fa-gamepad"></i>
+                         <i class="fas fa-gamepad" style='font-size:36px; color: #ce0a21; padding-bottom: inherit; padding-top: inherit;'></i>
                          <h4>Games</h4>
                          <p>Play a game to improve your skills</p>
                          <a href="#" class="btn btn-primary btn-lg">Play </a>
@@ -151,6 +151,17 @@
                     </div>
                
                </div>
+
+               <div class="col-md-3 col-sm-6 wow fadeInUp" data-wow-delay="0.8s">
+                    <div class="service-thumb">
+                       <i class='fas fa-crown' style='font-size:36px; color: #ce0a21; padding-bottom: inherit; padding-top: inherit;' ></i>
+                         <h4>Competition</h4>
+                         <p>Answer questions correctly to be the Math Champion.</p>
+                         <a href="#" class="btn btn-primary btn-lg">Compete </a>
+                    </div>
+               
+               </div>
+
                </div>
           </div>
      </div>
