@@ -85,18 +85,6 @@ background-repeat: no-repeat;
 
     <br><br><br><br>
 
-     
-		<!--button to check for answers--> 
-		<script>
-			
-			function getAnswer()
-			{
-				document.getElementById("answer").style.display = 'block';
-				
-			}
-
-			
-		</script>
 
 
 	<div class="container" style="margin-left: 450px;">
@@ -106,8 +94,8 @@ background-repeat: no-repeat;
 
 
 	<script type="text/javascript">
-		
-
+		//button to check for answers--> 
+						
 		//first addition value
 		var firstNum = Math.ceil(5 * Math.random());
 		//second addition value
@@ -119,6 +107,27 @@ background-repeat: no-repeat;
 
 
 		document.getElementById("answer").innerHTML = "The answer is " + solution;
+
+    
+			function getAnswer()
+			{
+				document.getElementById("answer").style.display = 'block';
+
+        var kidAnswer = document.getElementById("myAnswer").value;
+
+        if (kidAnswer == solution)
+         {
+           alert("Good job");
+          
+        }
+        else
+        {
+          alert("Try again");
+        }
+				
+			}
+
+
 	</script>
 
 			<input type="text" id="myAnswer" placeholder="Type answer"><br><br>

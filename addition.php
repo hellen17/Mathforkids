@@ -70,49 +70,47 @@
 
     <br><br><br><br>
 
-		<!--button to check for answers -->
-		<script>
-			
-			function getAnswer()
-			{
-				document.getElementById("answer").style.display = 'block';
-				
-			}
 
-			
-		</script>
-
-
-	<div class="container" style="margin-left: 450px;">
+	<div class="container" style="margin-left: 450px;"><!--container with the sums generated and button for answer -->
 	
 	<h1 style="color: black; margin-left: -60px;">Addition Sums</h1><br><br><br><br>
 	<p id="answer" style="display: none; font-size: 30px;"></p><!-- where the answer is displayed -->
   
-	<script type="text/javascript">
-		
+  <script>
+			
+      //first addition value
+  var firstNum = Math.ceil(5 * Math.random());
+  //second addition value
+  var secondNum = Math.ceil(5 * Math.random());
+  //answer
+  var solution = firstNum + secondNum;
+  
+  document.write(firstNum + '+' + secondNum +'= ?');
 
-		//first addition value
-		var firstNum = Math.ceil(5 * Math.random());
-		//second addition value
-		var secondNum = Math.ceil(5 * Math.random());
-		//answer
-		var solution = firstNum + secondNum;
+  document.getElementById("answer").innerHTML = "The correct answer is "+solution;
+  
+  
+    function getAnswer()
+    {
+        
+  document.getElementById("answer").style.display = 'block';
+      
+  var kidAnswer = document.getElementById("myAnswer").value;
+
+      if (kidAnswer == solution) {
+        alert("Good job");
+      }
+      else
+      {
+        alert("Try again");
+      }
+    }
     
-		document.write(firstNum + '+' + secondNum +'= ?');
+  </script>
 
-
-		document.getElementById("answer").innerHTML = "The answer is " + solution;
-
-   
- 
-    
-	</script>
-
-			<input type="text" id="myAnswer"><br><br>
+			<input type="number" id="myAnswer"><br><br>
 			<button type="button" onclick="getAnswer()">Check Answer</button>
 			<button type="button" ><a href="addition.php">Next Sum</a></button></div>
-
-
 			 
     <footer>
       <div class="container">
