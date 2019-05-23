@@ -157,7 +157,7 @@
                        <i class='fas fa-crown' style='font-size:36px; color: #ce0a21; padding-bottom: inherit; padding-top: inherit;' ></i>
                          <h4>Competition</h4>
                          <p>Answer questions correctly to be the Math Champion.</p>
-                         <a href="#" class="btn btn-primary btn-lg">Compete </a>
+                         <a href="competition.php" class="btn btn-primary btn-lg">Compete </a>
                     </div>
                
                </div>

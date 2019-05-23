@@ -58,10 +58,10 @@
         </div>
         <div class="navbar-collapse collapse">
           <ul class="nav navbar-nav navbar-right">
-            <li><a href="#" class="active">Home</a></li>
+            <li><a href="index.php" class="active">Home</a></li>
 
-            <li><a href="#">Activities</a></li>
-            <li><a href="#">Contact us</a></li>
+            <li><a href="activitieshome.php">Activities</a></li>
+            <li><a href="contacts.php">Contact us</a></li>
 
             <li><a href="#account">Account</a></li>
           </ul>
