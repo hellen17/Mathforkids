@@ -61,8 +61,8 @@
           <ul class="nav navbar-nav navbar-right">
             <li><a href="index.html" class="active">Home</a></li>
             <li><a href="activitieshome.php" class="active">Activities</a></li>
-            <li><a href="#contact">Contact us</a></li>
-            <li><a href="#account">Account</a></li>
+            <li><a href="contacts.php">Contact us</a></li>
+            <li><a href="account.php">Account</a></li>
           </ul>
         </div><!--/.navbar-collapse -->
       </div>
