@@ -19,6 +19,7 @@
   <link rel="stylesheet" href="css/animate.css">
   <link href='http://fonts.googleapis.com/css?family=Dr+Sugiyama|Lato:400,100,100italic,300,300italic,400italic,700,700italic,900,900italic' rel='stylesheet' type='text/css'>
   <link rel="stylesheet" href="font-awesome-4.7.0/font-awesome-4.7.0/css/font-awesome.min.css"> 
+    <link rel="stylesheet" href="css/main.css">
   
 
   <link rel="stylesheet" href="css/bootstrap.min.css">

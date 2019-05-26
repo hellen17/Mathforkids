@@ -58,7 +58,7 @@
             <li><a href="activitieshome.php">Activities</a></li>
             <li><a href="contacts.php">Contact us</a></li>
 
-            <li><a href="#account">Account</a></li>
+            <li><a href="account.php">Account</a></li>
           </ul>
         </div><!--/.navbar-collapse -->
       </div>
