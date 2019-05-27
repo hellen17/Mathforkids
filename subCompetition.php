@@ -89,23 +89,23 @@
 
               B.push(Math.ceil(5 * Math.random()));
           }
-          document.getElementById("a").innerHTML = A[0] + '+' + B[0];
-          document.getElementById("b").innerHTML = A[1] + '+' + B[1];
-          document.getElementById("c").innerHTML = A[2] + '+' + B[2];
-          document.getElementById("d").innerHTML = A[3] + '+' + B[3];
-          document.getElementById("e").innerHTML = A[4] + '+' + B[4];
-          document.getElementById("f").innerHTML = A[5] + '+' + B[5];
-          document.getElementById("g").innerHTML = A[6] + '+' + B[6];
-          document.getElementById("h").innerHTML = A[7] + '+' + B[7];
+          document.getElementById("a").innerHTML = A[0] + '-' + B[0];
+          document.getElementById("b").innerHTML = A[1] + '-' + B[1];
+          document.getElementById("c").innerHTML = A[2] + '-' + B[2];
+          document.getElementById("d").innerHTML = A[3] + '-' + B[3];
+          document.getElementById("e").innerHTML = A[4] + '-' + B[4];
+          document.getElementById("f").innerHTML = A[5] + '-' + B[5];
+          document.getElementById("g").innerHTML = A[6] + '-' + B[6];
+          document.getElementById("h").innerHTML = A[7] + '-' + B[7];
 
-          let A1 = A[0] + B[0];
-          let A2 = A[1] + B[1];
-          let A3 = A[2] + B[2];
-          let A4 = A[3] + B[3];
-          let A5 = A[4] + B[4];
-          let A6 = A[5] + B[5];
-          let A7 = A[6] + B[6];
-          let A8 = A[7] + B[7];
+          let A1 = A[0] - B[0];
+          let A2 = A[1] - B[1];
+          let A3 = A[2] - B[2];
+          let A4 = A[3] - B[3];
+          let A5 = A[4] - B[4];
+          let A6 = A[5] - B[5];
+          let A7 = A[6] - B[6];
+          let A8 = A[7] - B[7];
 
           function getAnswer()
             {
@@ -184,7 +184,7 @@
 
       </script>        
           <button type="button" onclick="getAnswer()">Check Answer</button>
-          <button type="button" ><a href="addCompetition.php">New Questions</a></button></div>
+          <button type="button" ><a href="subCompetition.php">New Questions</a></button></div>
           <p id="totalAnswer"></p>
 
  <footer>

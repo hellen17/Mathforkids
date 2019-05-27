@@ -83,7 +83,7 @@
                        <i class="fas fa-user-graduate" style='font-size:36px; color: #ce0a21; padding-bottom: inherit; padding-top: inherit;' ></i>
                          <h4>Go Subtraction</h4>
                          <p>Enter the subtraction competition</p>
-                         <a href="#" class="btn btn-primary btn-lg">Compete </a>
+                         <a href="subCompetition.php" class="btn btn-primary btn-lg">Compete </a>
                     </div>
                
                </div>
