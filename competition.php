@@ -72,7 +72,7 @@
           <div class="col-md-3 col-sm-6 wow fadeInUp" data-wow-delay="0.6s">
                     <div class="service-thumb">
                          <i class="fas fa-user-graduate" style='font-size:36px; color: #ce0a21; padding-bottom: inherit; padding-top: inherit;'></i>
-                         <h4>Go Addition</h4>
+                         <h4>Do Addition</h4>
                          <p>Enter the addition competition</p>
                          <a href="addCompetition.php" class="btn btn-primary btn-lg">Compete </a>
                     </div>
@@ -81,7 +81,7 @@
                <div class="col-md-3 col-sm-6 wow fadeInUp" data-wow-delay="0.8s">
                     <div class="service-thumb">
                        <i class="fas fa-user-graduate" style='font-size:36px; color: #ce0a21; padding-bottom: inherit; padding-top: inherit;' ></i>
-                         <h4>Go Subtraction</h4>
+                         <h4>Do Subtraction</h4>
                          <p>Enter the subtraction competition</p>
                          <a href="subCompetition.php" class="btn btn-primary btn-lg">Compete </a>
                     </div>

@@ -138,7 +138,7 @@
                          <i class="fas fa-gamepad" style='font-size:36px; color: #ce0a21; padding-bottom: inherit; padding-top: inherit;'></i>
                          <h4>Games</h4>
                          <p>Play a game to improve your skills</p>
-                         <a href="#" class="btn btn-primary btn-lg">Play </a>
+                         <a href="MathTutor-master/index.html" class="btn btn-primary btn-lg">Play </a>
                     </div>
                </div>
 

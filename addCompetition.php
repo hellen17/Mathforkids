@@ -178,7 +178,7 @@
           }
           
         
-          document.getElementById("totalAnswer").innerHTML = counter;
+          document.getElementById("totalAnswer").innerHTML = "You got " +counter+ " questions correct";
 
             }
 
