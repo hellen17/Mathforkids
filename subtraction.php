@@ -34,28 +34,14 @@
   <script src="js/modernizr-2.7.1.js"></script>
 
   <!-- Fav and touch icons -->
-  <link rel="apple-touch-icon-precomposed" sizes="144x144" href="/apple-touch-icon-144-precomposed.png">
-  <link rel="apple-touch-icon-precomposed" sizes="114x114" href="/apple-touch-icon-114-precomposed.png">
-  <link rel="apple-touch-icon-precomposed" sizes="72x72" href="/apple-touch-icon-72-precomposed.png">
-  <link rel="apple-touch-icon-precomposed" href="/apple-touch-icon-57-precomposed.png">
+
   <link rel="shortcut icon" href="/favicon.ico">
 
 <style type="text/css">
   h1{
     display: inline;
   }
- /* #fixed{
-  background:url(math.jpg) no-repeat center center fixed;
-  display: table;
-  height: 60%;
-  position: relative;
-  width: 100%;
-  background-size: cover;
- background-image: linear-gradient(rgba(255,0,0,0), rgba(255,0,0,1)),url(Therapistbg.jpg);
-    background-position: center;
-background-repeat: no-repeat;
 
-}*/
 </style>
 
 
@@ -77,7 +63,7 @@ background-repeat: no-repeat;
             <li><a href="index.html" class="active">Home</a></li>
             <li><a href="activitieshome.php" class="active">Activities</a></li>
             <li><a href="contacts.php">Contact us</a></li>
-            <li><a href="#account">Account</a></li>
+            <li><a href="account.php">Account</a></li>
           </ul>
         </div><!--/.navbar-collapse -->
       </div>

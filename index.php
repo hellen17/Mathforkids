@@ -27,11 +27,6 @@
 
   <script src="js/modernizr-2.7.1.js"></script>
 
-  <!-- Fav and touch icons -->
-  <link rel="apple-touch-icon-precomposed" sizes="144x144" href="/apple-touch-icon-144-precomposed.png">
-  <link rel="apple-touch-icon-precomposed" sizes="114x114" href="/apple-touch-icon-114-precomposed.png">
-  <link rel="apple-touch-icon-precomposed" sizes="72x72" href="/apple-touch-icon-72-precomposed.png">
-  <link rel="apple-touch-icon-precomposed" href="/apple-touch-icon-57-precomposed.png">
   <link rel="shortcut icon" href="/favicon.ico">
 
 <style type="text/css">
@@ -63,7 +58,7 @@
             <li><a href="activitieshome.php">Activities</a></li>
             <li><a href="contacts.php">Contact us</a></li>
 
-            <li><a href="#account">Account</a></li>
+            <li><a href="account.php">Account</a></li>
           </ul>
         </div><!--/.navbar-collapse -->
       </div>
