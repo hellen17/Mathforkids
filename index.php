@@ -53,12 +53,18 @@
         </div>
         <div class="navbar-collapse collapse">
           <ul class="nav navbar-nav navbar-right">
+            
             <li><a href="index.php" class="active">Home</a></li>
 
             <li><a href="activitieshome.php">Activities</a></li>
             <li><a href="contacts.php">Contact us</a></li>
 
             <li><a href="account.php">Account</a></li>
+            <li><a class="btn btn-primary dropdown-toggle" type="button" data-toggle="dropdown"><?php include ('helloUser.php')?>
+            <ul class="dropdown-menu">
+             <li><a href="byeUser.php">Logout</a></li>
+            </ul>
+          </a></li>
           </ul>
         </div><!--/.navbar-collapse -->
       </div>

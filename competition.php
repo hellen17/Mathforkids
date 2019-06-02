@@ -1,3 +1,7 @@
+<?php
+session_start();
+?>
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -49,10 +53,16 @@
         </div>
         <div class="navbar-collapse collapse">
           <ul class="nav navbar-nav navbar-right">
+          
             <li><a href="index.php">Home</a></li>
             <li><a href="activitieshome.php"  class="active">Activities</a></li>
             <li><a href="contacts.php">Contact us</a></li>
             <li><a href="account.php">Account</a></li>
+            <li><a class="btn btn-primary dropdown-toggle" type="button" data-toggle="dropdown"><?php include ('helloUser.php')?>
+            <ul class="dropdown-menu">
+             <li><a href="byeUser.php">Logout</a></li>
+            </ul>
+          </a></li>
           </ul>
         </div><!--/.navbar-collapse -->
       </div>
@@ -95,6 +105,35 @@
 
 <!--top scorers to be displayed -->
     <h2 style="text-align:center;text-decoration:underline;">Top Scorers</h2>
+
+    <!-- columns for data -->
+    <div class="container">
+      <?php 
+      
+    define('DBSERVER', 'localhost');
+    define('DBUSER', 'root');
+    define('DBPASSWORD', '');
+    define('DBNAME', 'registration');
+
+    $con = mysqli_connect(DBSERVER,DBUSER,DBPASSWORD,DBNAME) or die(mysqli_connect_errno());
+    $query = mysqli_query($con, "SELECT competitionType,username,answers,usedTime FROM competition");
+
+    echo "<table>";
+    echo "<tr><th>Competition</th><th>Username</th><th>Correct Answers</th><th>Amount of time</th></tr>";
+
+    while($row = mysqli_fetch_array($query)) {
+    $competitionType = $row['competitionType'];
+    $username = $row['username'];
+    $answers = $row['answers'];
+    $mytime = $row['usedTime'];
+    echo "<tr><td style='width: 200px;'>".$competitionType."</td><td style='width: 200px;'>".$username."</td><td style='width: 600px;'>".$answers."</td><td>".$mytime."</td></tr>";
+} 
+
+echo "</table>";
+
+      ?>
+    </div>
+
  <footer>
       <div class="container">
         <div class="row">

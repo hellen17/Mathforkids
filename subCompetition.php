@@ -1,3 +1,26 @@
+<?php
+session_start();
+
+    
+      if (isset($_POST['results'])) {
+        # code...
+        $competition = $_POST['compete'];
+        $myname = $_SESSION['username'];
+        $score = $_POST['totalAnswer'];
+        $myTime = $_POST['ttime'];
+
+        
+      define('DBSERVER', 'localhost');
+      define('DBUSER', 'root');
+      define('DBPASSWORD', '');
+      define('DBNAME', 'registration');
+
+      $con = mysqli_connect(DBSERVER,DBUSER,DBPASSWORD,DBNAME) or die(mysqli_connect_errno());
+      $query = mysqli_query($con, "INSERT INTO competition(competitionType,username,answers,usedTime) VALUES('$competition','$myname','$score','$myTime')");
+
+      }
+?>
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -49,18 +72,25 @@
                     </div>
                     <div class="navbar-collapse collapse">
                     <ul class="nav navbar-nav navbar-right">
+                
                         <li><a href="index.php" class="active">Home</a></li>
                         <li><a href="activitieshome.php">Activities</a></li>
                         <li><a href="contacts.php">Contact us</a></li>
                         <li><a href="#account">Account</a></li>
+                        <li><a class="btn btn-primary dropdown-toggle" type="button" data-toggle="dropdown"><?php include ('helloUser.php')?>
+            <ul class="dropdown-menu">
+             <li><a href="byeUser.php">Logout</a></li>
+            </ul>
+          </a></li>
                     </ul>
                     </div><!--/.navbar-collapse -->
                 </div>
             </div>
 
             <!--Competition body -->
-        <h2 style="text-align:center; text-decoration:underline;">Calculate as quickly as possible.</h2>
+        <h2 style="text-align:center; text-decoration:underline;">Calculate as quickly as possible.<br>Click the 'START BUTTON' to record your time.</h2>
         <div style="text-align:center;">
+                  <button onclick="start()">Start</button>
 
           <p id="a" style="color:black;"></p><input type="number" id="answerA">
           <p id="b" style="color:black;"></p><input type="number" id="answerB">
@@ -178,15 +208,56 @@
           }
           
         
-          document.getElementById("totalAnswer").innerHTML = "You got " +counter+ " questions correct";
+          document.getElementById("totalAnswer").innerHTML = counter + " answers";
 
             }
 
       </script>        
-          <button type="button" onclick="getAnswer()">Check Answer</button>
-          <button type="button" ><a href="subCompetition.php">New Questions</a></button></div>
-          <p id="totalAnswer"></p>
+      <div class="container" style="text-align:center;"><br><br>
+      <button type="button" onclick="getAnswer();end();">Check Answer</button>
+          <button type="button" ><a href="subCompetition.php">New Questions</a></button>
+      </div>
+         
 
+                      <br><br>
+
+            <!-- form to save user results -->
+            <form action="subCompetition.php" method="post" style="text-align:center;">
+
+            <input type="text" id="compete" name="compete" value="Subtraction" hidden>
+
+
+            Total questions correct
+            <textarea name="totalAnswer" id="totalAnswer" cols="39" rows="3" readonly ></textarea>
+
+            Total time taken
+            <textarea name="ttime" id="ttime" cols="39" rows="3" readonly ></textarea><br><br>
+            <input type="submit" name="results" id="results" value="Save Results">
+
+            </form>
+
+
+
+
+            <!-- <button onclick="end()">End</button> -->
+                    <script>
+                    var startTime, endTime;
+
+            function start() {
+            startTime = new Date();
+            };
+
+            function end() {
+            endTime = new Date();
+            var timeDiff = endTime - startTime; //in ms
+            // strip the ms
+            timeDiff /= 1000;
+
+            // get seconds 
+            var seconds = Math.round(timeDiff);
+            document.getElementById("ttime").innerHTML = seconds + " seconds";
+            }
+            </script>
  <footer>
       <div class="container">
         <div class="row">
