@@ -104,7 +104,7 @@ session_start();
 </section>
 
 <!--top scorers to be displayed -->
-    <h2 style="text-align:center;text-decoration:underline;">Top Scorers</h2>
+    <h2 style="text-align:center;text-decoration:underline;">Competition champions</h2>
 
     <!-- columns for data -->
     <div class="container">
@@ -119,7 +119,7 @@ session_start();
     $query = mysqli_query($con, "SELECT competitionType,username,answers,usedTime FROM competition");
 
     echo "<table>";
-    echo "<tr><th>Competition</th><th>Username</th><th>Correct Answers</th><th>Amount of time</th></tr>";
+    echo "<tr><th>Competition</th><th>Username</th><th>Correct Answers</th><th>Time in seconds</th></tr>";
 
     while($row = mysqli_fetch_array($query)) {
     $competitionType = $row['competitionType'];
