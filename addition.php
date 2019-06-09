@@ -79,9 +79,10 @@
 
 	<div class="container" style="margin-left: 450px;"><!--container with the sums generated and button for answer -->
 	
-	<h1 style="color: black; margin-left: -60px;">Addition Sums</h1><br><br><br><br>
+	<h1 style="color: black; text-align:center;">Addition Sums</h1><br>
 	<p id="answer" style="display: none; font-size: 30px;"></p><!-- where the answer is displayed -->
-          
+  <p id="answer2" style="display: none; font-size: 30px;"></p><!-- where the answer is displayed -->
+
           <script>
               
               //first addition value
@@ -89,32 +90,35 @@
           //second addition value
           var secondNum = Math.ceil(5 * Math.random());
           //answer
-          var solution = firstNum + secondNum;
+          let solution = firstNum + secondNum;
           
-          document.write(firstNum + '+' + secondNum +'= ?');
+          document.write("<h3 style='color:red;font-size:60px;'>" + firstNum + '+' + secondNum +'= ?' + "</h3>");
 
-          document.getElementById("answer").innerHTML = "The correct answer is "+solution;
-          
+          document.getElementById("answer").innerHTML = "Congratulations, "+ solution +" is correct ";
+          document.getElementById("answer2").innerHTML = "Sorry, the correct answer is "+solution;
+
           
             function getAnswer()
             {
                 
-          document.getElementById("answer").style.display = 'block';
               
           var kidAnswer = document.getElementById("myAnswer").value;
 
               if (kidAnswer == solution) {
-                alert("Good job");
+
+                document.getElementById("answer").style.display = 'block';
+
               }
               else
               {
-                alert("Try again");
+                document.getElementById("answer2").style.display = 'block';
+
               }
             }
             
           </script>
 
-			<input type="number" id="myAnswer"><br><br>
+			<input type="number" id="myAnswer" placeholder="Type answer"><br><br>
 			<button type="button" onclick="getAnswer()">Check Answer</button>
       <button type="button" ><a href="addition.php">Next Sum</a></button></div>
 			 

@@ -81,8 +81,9 @@
 
 	<div class="container" style="margin-left: 450px;">
 	
-	<h1 style="color: black; margin-left: -60px;">Subtraction Sums</h1><br><br><br><br>
+	<h1 style="color: black; text-align:center;">Subtraction Sums</h1><br>
 	<p id="answer" style="display: none; font-size: 30px;"></p><!-- where the answer is displayed -->
+	<p id="answer2" style="display: none; font-size: 30px;"></p><!-- where the answer is displayed -->
 
 
 	<script type="text/javascript">
@@ -93,28 +94,28 @@
 		//second addition value
 		var secondNum = Math.ceil(5 * Math.random());
 		//answer
-		var solution = firstNum - secondNum;
+		let solution = firstNum - secondNum;
 
-		document.write(firstNum + '-' + secondNum +'= ?');
+    document.write("<h3 style='color:red;font-size:60px;'>" + firstNum + '-' + secondNum +'= ?' + "</h3>");
 
 
-		document.getElementById("answer").innerHTML = "The answer is " + solution;
+		document.getElementById("answer").innerHTML = "Congratulations, "+ solution +" is correct ";
+		document.getElementById("answer2").innerHTML = "Sorry, the correct answer is " + solution;
 
     
 			function getAnswer()
 			{
-				document.getElementById("answer").style.display = 'block';
 
         var kidAnswer = document.getElementById("myAnswer").value;
 
         if (kidAnswer == solution)
          {
-           alert("Good job");
-          
+          document.getElementById("answer").style.display = 'block';
+
         }
         else
         {
-          alert("Try again");
+          document.getElementById("answer2").style.display = 'block';
         }
 				
 			}
