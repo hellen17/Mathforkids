@@ -94,8 +94,8 @@
           
           document.write("<h3 style='color:red;font-size:60px;'>" + firstNum + '+' + secondNum +'= ?' + "</h3>");
 
-          document.getElementById("answer").innerHTML = "Congratulations, "+ solution +" is correct ";
-          document.getElementById("answer2").innerHTML = "Sorry, the correct answer is "+solution;
+          document.getElementById("answer").innerHTML =  ' <img src="correct.png" style="height:100px;">' + " Congratulations, "+ solution +" is correct ";
+          document.getElementById("answer2").innerHTML = ' <img src="wrong.png" style="height:100px;">' + " Sorry, the correct answer is "+solution;
 
           
             function getAnswer()
