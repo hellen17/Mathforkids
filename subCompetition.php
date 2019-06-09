@@ -76,7 +76,7 @@ session_start();
                         <li><a href="index.php" class="active">Home</a></li>
                         <li><a href="activitieshome.php">Activities</a></li>
                         <li><a href="contacts.php">Contact us</a></li>
-                        <li><a href="#account">Account</a></li>
+                        <li><a href="account.php">Account</a></li>
                         <li><a class="btn btn-primary dropdown-toggle" type="button" data-toggle="dropdown"><?php include ('helloUser.php')?>
             <ul class="dropdown-menu">
              <li><a href="byeUser.php">Logout</a></li>
@@ -90,7 +90,7 @@ session_start();
             <!--Competition body -->
         <h2 style="text-align:center; text-decoration:underline;">Calculate as quickly as possible.<br>Click the 'START BUTTON' to record your time.</h2>
         <div style="text-align:center;">
-                  <button onclick="start()">Start</button>
+                  <button onclick="start()">Start Timer</button>
 
           <p id="a" style="color:black;"></p><input type="number" id="answerA">
           <p id="b" style="color:black;"></p><input type="number" id="answerB">

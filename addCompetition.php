@@ -92,7 +92,7 @@ session_start();
         <h2 style="text-align:center; text-decoration:underline;">Calculate as quickly as possible.<br>Click the 'START BUTTON' to record your time.</h2>
         
         <div style="text-align:center;">
-        <button onclick="start()">Start</button>
+        <button onclick="start()">Start Timer</button>
 
           <p id="a" style="color:black;"></p><input type="number" id="answerA">
           <p id="b" style="color:black;"></p><input type="number" id="answerB">
