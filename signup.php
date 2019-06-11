@@ -13,6 +13,7 @@ include('errors.php');
 
 		<!-- MATERIAL DESIGN ICONIC FONT -->
 		<link rel="stylesheet" href="fonts/material-design-iconic-font/css/material-design-iconic-font.min.css">
+		  <link rel="stylesheet" href="css/bootstrap.min.css">
 		
 		<!-- STYLE CSS -->
 		<link rel="stylesheet" href="css/style.css">
@@ -68,7 +69,7 @@ alert("Password must be at least 6 characters long.");
 						<input type="password" name="password_2"  class="form-control" data-validation="length" data-validation-length="min8">
 					</div>
 
-					<button type="submit" name="reg_user">create my account</button><br>
+					<button type="submit" name="reg_user">Create my account</button><br>
         
   		Already a member? <a href="signin.php">Sign in</a>
   

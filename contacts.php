@@ -66,7 +66,7 @@
             <li><a href="activitieshome.php">Activities</a></li>
             <li><a href="contacts.php"  class="active">Contact us</a></li>
             <li><a href="account.php">Account</a></li>
-            <li><a class="btn btn-primary dropdown-toggle" type="button" data-toggle="dropdown"><?php include ('helloUser.php')?>
+            <li><a class="btn btn-primary dropdown-toggle" type="button" data-toggle="dropdown"><?php include ('helloUser.php');?>
             <ul class="dropdown-menu">
              <li><a href="byeUser.php">Logout</a></li>
             </ul>
