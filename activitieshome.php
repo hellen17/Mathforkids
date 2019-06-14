@@ -66,10 +66,11 @@
             <li><a href="contacts.php">Contact us</a></li>
             <li><a href="account.php">Account</a></li>
             <li><a class="btn btn-primary dropdown-toggle" type="button" data-toggle="dropdown"><?php include ('helloUser.php')?>
-            <ul class="dropdown-menu">
-             <li><a href="byeUser.php">Logout</a></li>
-            </ul>
-          </a></li>
+                <ul class="dropdown-menu">
+                  <li><a href="byeUser.php">Logout</a></li>
+                </ul>
+            </a>
+            </li>
           </ul>
         </div><!--/.navbar-collapse -->
       </div>
@@ -144,7 +145,7 @@
                          <i class="fas fa-gamepad" style='font-size:36px; color: #ce0a21; padding-bottom: inherit; padding-top: inherit;'></i>
                          <h4>Games</h4>
                          <p>Play a game to improve your skills</p>
-                         <a href="tryout.html" class="btn btn-primary btn-lg">Play </a>
+                         <a href="tryout.php" class="btn btn-primary btn-lg">Play </a>
                     </div>
                </div>
 
@@ -153,7 +154,7 @@
                        <i class='fab fa-youtube' style='font-size:36px; color: #ce0a21; padding-bottom: inherit; padding-top: inherit;' ></i>
                          <h4>Videos</h4>
                          <p>Learn Math through watching videos.</p>
-                         <a href="indexq.html" class="btn btn-primary btn-lg">Watch </a>
+                         <a href="indexq.php" class="btn btn-primary btn-lg">Watch </a>
                     </div>
                
                </div>

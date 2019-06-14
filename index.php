@@ -60,11 +60,13 @@
             <li><a href="contacts.php">Contact us</a></li>
 
             <li><a href="account.php">Account</a></li>
+            
             <li><a class="btn btn-primary dropdown-toggle" type="button" data-toggle="dropdown"><?php include ('helloUser.php')?>
-            <ul class="dropdown-menu">
-             <li><a href="byeUser.php">Logout</a></li>
-            </ul>
-          </a></li>
+                <ul class="dropdown-menu">
+                  <li><a href="byeUser.php">Logout</a></li>
+                </ul>
+            </a>
+            </li>
           </ul>
         </div><!--/.navbar-collapse -->
       </div>
