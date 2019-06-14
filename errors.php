@@ -3,7 +3,7 @@
 
   <div class="error">
     <?php foreach ($errors as $error) : ?>
-      <p style="color: #ff0000;"><?php echo $error ?></p>
+      <p class="alert alert-danger" ><?php echo $error ?></p>
     <?php endforeach ?>
   </div>
 <!-- ======= -->

@@ -71,16 +71,28 @@ if (isset($_POST['login_user'])) {
 
   if (count($errors) == 0) {
     $password_1 = md5($password_1);
-    $query = "SELECT * FROM users WHERE username='$username' AND password='$password_1'";
-    $results = mysqli_query($db, $query);
-    if (mysqli_num_rows($results) == 1) {
+    $query = "SELECT * FROM users WHERE username=? AND password=?";
+    $stmt = $db->prepare($query);
+    $stmt->bind_param("ss",$username, $password_1);
+    $stmt->execute();
+
+    $result = $stmt->get_result();
+   
+
+    if ($result->num_rows == 1) {
+       $row = $result->fetch_array();
       $_SESSION['username'] = $username;
       $_SESSION['success'] = "You are now logged in";
+
+      $_SESSION['user_data'] = array(
+        'username' =>$row['username'],
+        'email'=>$row['email']
+      );
+
       header('location: index.php');
     }else {
     /*  array_push($errors, "Wrong username/password combination");*/
  
-
     echo "<script type='text/javascript'>";
     echo "alert('Wrong username/password combination');";
     echo "</script>";

@@ -1,4 +1,10 @@
-<?php session_start(); ?>
+<?php session_start(); 
+
+  $user_data = isset($_SESSION['user_data'])? $_SESSION['user_data'] : null;
+  $errors = array();
+  $conn = mysqli_connect('localhost', 'root', '', 'registration');
+  include 'errors.php';
+?>
 <!DOCTYPE html>
 <html>
 <head>
@@ -52,7 +58,7 @@
             <li><a href="activitieshome.php">Activities</a></li>
             <li><a href="contacts.php">Contact us</a></li>
             <li><a href="account.php" class="active">Account</a></li>
-            <li><a class="btn btn-primary dropdown-toggle" type="button" data-toggle="dropdown"><?php include ('helloUser.php')?>
+            <li><a class="btn btn-primary dropdown-toggle" type="button" data-toggle="dropdown"><?php include ('helloUser.php');?>
             <ul class="dropdown-menu">
              <li><a href="byeUser.php">Logout</a></li>
             </ul>
@@ -63,26 +69,19 @@
     </div>
     <br><br><br>
 
-<form class="form-horizontal">
+<form class="form-horizontal" method="post" action="<?=$_SERVER['PHP_SELF']?>">
 <fieldset>
 
+<?php include "flashdata.php";?>
 <!-- Form Name -->
 <legend style="text-align: center;">Update User Profile</legend>
 
-<!-- Text input-->
-<div class="form-group">
-  <label class="col-md-4 control-label" for="textinput">User ID</label>  
-  <div class="col-md-4">
-  <input id="textinput" name="textinput" type="text" placeholder="user id" class="form-control input-md">
-    
-  </div>
-</div>
 
 <!-- Text input-->
 <div class="form-group">
-  <label class="col-md-4 control-label" for="textinput">Name</label>  
+  <label class="col-md-4 control-label" for="textinput">Username</label>  
   <div class="col-md-4">
-  <input id="textinput" name="textinput" type="text" placeholder="your name" class="form-control input-md" required="">
+  <input id="textinput" name="textinput" type="text" placeholder="your name" class="form-control input-md" required="" value="<?=$user_data['username']?>">
     
   </div>
 </div>
@@ -91,8 +90,28 @@
 <div class="form-group">
   <label class="col-md-4 control-label" for="textinput">Email</label>  
   <div class="col-md-4">
-  <input id="textinput" name="textinput" type="text" placeholder="your email address" class="form-control input-md">
+  <input id="textinput" name="textinput" type="text" placeholder="your email address" class="form-control input-md" value="<?=$user_data['email']?>">
     
+  </div>
+</div>
+<hr>
+
+
+
+
+</fieldset>
+</form>
+
+
+<form class="form-horizontal" method="post" action="account_action.php">
+<fieldset>
+<br><br>
+<h3 style="text-align: center;">Reset Password</h3>
+
+<div class="form-group">
+  <label class="col-md-4 control-label" for="textinput">Current Password</label>  
+  <div class="col-md-4">
+  <input id="textinput" name="current_password" type="password" placeholder="Enter your current password" class="form-control input-md">
   </div>
 </div>
 
@@ -100,8 +119,7 @@
 <div class="form-group">
   <label class="col-md-4 control-label" for="textinput">Password</label>  
   <div class="col-md-4">
-  <input id="textinput" name="textinput" type="text" placeholder="enter your password" class="form-control input-md">
-    
+  <input id="textinput" name="new_password" type="password" placeholder="Enter your new password" class="form-control input-md">
   </div>
 </div>
 
@@ -109,13 +127,10 @@
 <div class="form-group">
   <label class="col-md-4 control-label" for="textinput">Confirm Password</label>  
   <div class="col-md-4">
-  <input id="textinput" name="textinput" type="text" placeholder="confirm password" class="form-control input-md">
+  <input id="textinput" name="confirm_password" type="password" placeholder="Confirm password" class="form-control input-md">
     
   </div>
 </div>
-
-
-
 
 
 <!-- Button (Double) -->
@@ -123,15 +138,13 @@
 <div class="form-group">
   <label class="col-md-4 control-label" for="btnsave">Save Changes</label>
   <div class="col-md-8">
-    <button id="btnsave" name="btnsave" class="btn btn-success">Yes</button>
-    <button id="btncancel" name="btncancel" class="btn btn-danger">No</button>
+    <button type="submit" id="btn_save_pwd" name="btn_save_pwd" class="btn btn-success">Save</button>
+   <!--  <button id="btncancel" name="btncancel" class="btn btn-danger">No</button> -->
   </div>
 </div>
 
 </fieldset>
 </form>
-
-
 
 </body>
 </html>
